@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3481C14AEC76E5A8DA64DA59 /* Pods_AnalyticsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89033CBF22319674E6CE7E61 /* Pods_AnalyticsTests.framework */; };
 		6E265C791FB1178C0030E08E /* IntegrationsManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E265C781FB1178C0030E08E /* IntegrationsManagerTest.swift */; };
+		C11486AF228C903C00FE6CD8 /* SEGGZIPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C11486AE228C903B00FE6CD8 /* SEGGZIPTests.m */; };
+		C11486B2228C905600FE6CD8 /* NSData+OldSEGGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = C11486B0228C905600FE6CD8 /* NSData+OldSEGGZIP.m */; };
 		EA88A5981DED7608009FB66A /* SEGSerializableValue.h in Headers */ = {isa = PBXBuildFile; fileRef = EA88A5971DED7608009FB66A /* SEGSerializableValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA8F09741E24C5C600B8B93F /* MiddlewareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8F09731E24C5C600B8B93F /* MiddlewareTests.swift */; };
 		EAA542771EB4035400945DA7 /* TrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA542761EB4035400945DA7 /* TrackingTests.swift */; };
@@ -67,7 +69,6 @@
 		EADEB8DE1DECD12B005322DA /* SEGAnalyticsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = EADEB8AB1DECD12B005322DA /* SEGAnalyticsConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EADEB8DF1DECD12B005322DA /* SEGAnalyticsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = EADEB8AC1DECD12B005322DA /* SEGAnalyticsConfiguration.m */; };
 		EADEB8EE1DECD335005322DA /* HTTPClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEB8E01DECD335005322DA /* HTTPClientTest.swift */; };
-		EADEB8EF1DECD335005322DA /* NSData+SEGGUNZIPP.m in Sources */ = {isa = PBXBuildFile; fileRef = EADEB8E31DECD335005322DA /* NSData+SEGGUNZIPP.m */; };
 		EADEB8F01DECD335005322DA /* TestUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEB8E41DECD335005322DA /* TestUtils.swift */; };
 		EADEB8F11DECD335005322DA /* FileStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEB8E51DECD335005322DA /* FileStorageTest.swift */; };
 		EADEB8F21DECD335005322DA /* UserDefaultsStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADEB8E61DECD335005322DA /* UserDefaultsStorageTest.swift */; };
@@ -91,6 +92,9 @@
 		1DF03A6929EEFE7158913224 /* Pods-AnalyticsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsTests/Pods-AnalyticsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E265C781FB1178C0030E08E /* IntegrationsManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationsManagerTest.swift; sourceTree = "<group>"; };
 		89033CBF22319674E6CE7E61 /* Pods_AnalyticsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnalyticsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11486AE228C903B00FE6CD8 /* SEGGZIPTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGGZIPTests.m; sourceTree = "<group>"; };
+		C11486B0228C905600FE6CD8 /* NSData+OldSEGGZIP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+OldSEGGZIP.m"; sourceTree = "<group>"; };
+		C11486B1228C905600FE6CD8 /* NSData+OldSEGGZIP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+OldSEGGZIP.h"; sourceTree = "<group>"; };
 		D3BF8AE673FE0FD91DF5B503 /* Pods-AnalyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnalyticsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnalyticsTests/Pods-AnalyticsTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA88A5971DED7608009FB66A /* SEGSerializableValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGSerializableValue.h; sourceTree = "<group>"; };
 		EA8F09731E24C5C600B8B93F /* MiddlewareTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiddlewareTests.swift; sourceTree = "<group>"; };
@@ -152,8 +156,6 @@
 		EADEB8AB1DECD12B005322DA /* SEGAnalyticsConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGAnalyticsConfiguration.h; sourceTree = "<group>"; };
 		EADEB8AC1DECD12B005322DA /* SEGAnalyticsConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGAnalyticsConfiguration.m; sourceTree = "<group>"; };
 		EADEB8E01DECD335005322DA /* HTTPClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClientTest.swift; sourceTree = "<group>"; };
-		EADEB8E21DECD335005322DA /* NSData+SEGGUNZIPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+SEGGUNZIPP.h"; sourceTree = "<group>"; };
-		EADEB8E31DECD335005322DA /* NSData+SEGGUNZIPP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SEGGUNZIPP.m"; sourceTree = "<group>"; };
 		EADEB8E41DECD335005322DA /* TestUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestUtils.swift; sourceTree = "<group>"; };
 		EADEB8E51DECD335005322DA /* FileStorageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStorageTest.swift; sourceTree = "<group>"; };
 		EADEB8E61DECD335005322DA /* UserDefaultsStorageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorageTest.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				EADEB8EA1DECD335005322DA /* Info.plist */,
 				EADEB8EC1DECD335005322DA /* AnalyticsTests-Bridging-Header.h */,
 				6E265C781FB1178C0030E08E /* IntegrationsManagerTest.swift */,
+				C11486AE228C903B00FE6CD8 /* SEGGZIPTests.m */,
 			);
 			indentWidth = 2;
 			path = AnalyticsTests;
@@ -364,8 +367,8 @@
 		EADEB8E11DECD335005322DA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				EADEB8E21DECD335005322DA /* NSData+SEGGUNZIPP.h */,
-				EADEB8E31DECD335005322DA /* NSData+SEGGUNZIPP.m */,
+				C11486B1228C905600FE6CD8 /* NSData+OldSEGGZIP.h */,
+				C11486B0228C905600FE6CD8 /* NSData+OldSEGGZIP.m */,
 				EADEB8E41DECD335005322DA /* TestUtils.swift */,
 			);
 			path = Utils;
@@ -486,6 +489,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = EADEB8511DECD080005322DA;
@@ -541,7 +545,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AnalyticsTests/Pods-AnalyticsTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-AnalyticsTests/Pods-AnalyticsTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Nocilla/Nocilla.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
@@ -556,7 +560,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnalyticsTests/Pods-AnalyticsTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnalyticsTests/Pods-AnalyticsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -596,7 +600,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11486AF228C903C00FE6CD8 /* SEGGZIPTests.m in Sources */,
 				EADEB8F51DECD335005322DA /* CryptoTest.swift in Sources */,
+				C11486B2228C905600FE6CD8 /* NSData+OldSEGGZIP.m in Sources */,
 				EADEB8F21DECD335005322DA /* UserDefaultsStorageTest.swift in Sources */,
 				EAA542771EB4035400945DA7 /* TrackingTests.swift in Sources */,
 				EADEB8F41DECD335005322DA /* ContextTest.swift in Sources */,
@@ -607,7 +613,6 @@
 				EAA542801EB4382100945DA7 /* StoreKitTrackerTests.swift in Sources */,
 				EA8F09741E24C5C600B8B93F /* MiddlewareTests.swift in Sources */,
 				6E265C791FB1178C0030E08E /* IntegrationsManagerTest.swift in Sources */,
-				EADEB8EF1DECD335005322DA /* NSData+SEGGUNZIPP.m in Sources */,
 				EAA542821EB4410A00945DA7 /* ScreenTrackerTests.swift in Sources */,
 				EADEB8F01DECD335005322DA /* TestUtils.swift in Sources */,
 			);
